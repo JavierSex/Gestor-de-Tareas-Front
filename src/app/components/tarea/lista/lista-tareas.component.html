@@ -1,0 +1,22 @@
+<h2>Lista tareas</h2>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Titulo</th>
+            <th>Descripcion</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let tarea of tareas">
+            <td>{{tarea.titulo}}</td>
+            <td>{{tarea.descripcion}}</td>
+            <td>{{tarea.estado}}</td>   
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>   
+        </tr>
+    </tbody>
+</table>

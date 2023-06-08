@@ -1,0 +1,25 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Registro de tarea</h3>
+    <form (ngSubmit)= "onSubmit()">
+        <div class="form-group">
+            <label>Titulo : </label>
+            <input type = "text"
+            class = "form-control"
+            id = "titulo"
+            [(ngModel)] = 'tarea.titulo'
+            name = "titulo"
+            >
+        </div>
+        <div class="form-group">
+            <label>Descripcion : </label>
+            <input type = "text"
+            class = "form-control"
+            id = "descripcion"
+            [(ngModel)] = 'tarea.descripcion'
+            name = "descripcion"
+            >
+        </div> 
+        
+        <button class="btn btn-success">Guardar</button>
+    </form>
+</div>
